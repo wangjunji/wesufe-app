@@ -1,0 +1,75 @@
+.navigation {
+    border-top: solid 1px $flat-gray-1;
+    border-left: solid 1px $flat-gray-1;
+    .nav-item {
+        width: 25%;
+        float: left;
+        border-right: solid 1px $flat-gray-1;
+        border-bottom: solid 1px $flat-gray-1;
+        a {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding: 0 0 100% 0;
+            color: $flat-gray-4;
+            &:active {
+                background: #f9f9f9;
+            }
+            .wrap {
+                text-align: center;
+                position: absolute;
+                width: 100px;
+                height: 40px;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px;
+                margin-top: -20px;
+            }
+            i {
+                display: block;
+                font-size: 30px;
+                &.icon-timetable {
+                    color: $flat-yellow-1;
+                }
+                &.icon-score {
+                    color: $flat-orange-1;
+                }
+                &.icon-exam {
+                    color: $flat-orange-1;
+                }
+                &.icon-book {
+                    color: $flat-orange-2;
+                }
+                &.icon-news {
+                    color: $flat-purple-1;
+                }
+                &.icon-activity {
+                    color: $flat-green-1;
+                }
+                &.icon-lecture {
+                    color: $flat-blue-1;
+                }
+                &.icon-intern {
+                    color: $flat-green-1;
+                }
+                &.icon-electricity {
+                    color: $flat-yellow-1;
+                }
+                &.icon-building {
+                    color: $flat-orange-1;
+                }
+                &.icon-schedule {
+                    color: $flat-purple-2;
+                }
+                &.icon-heart {
+                    color: $flat-red-1;
+                }
+            }
+            p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

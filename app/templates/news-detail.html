@@ -1,0 +1,13 @@
+<ion-view view-title="校园新闻" hide-tabs="true">
+    <ion-content class="news">
+        <div class="list card">
+            <div class="item">
+                <h2 class="auto-wrap">{{news.title}}</h2>
+                <p><i class="ion-clock"></i> {{news.publishTime}}</p>
+            </div>
+            <div class="item item-body">
+            	<div ng-bind-html="news.article"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

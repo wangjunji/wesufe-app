@@ -1,0 +1,31 @@
+<ion-view view-title="考试安排" hide-tabs="true">
+    <ion-content class="exam">
+        <div class="overview">
+            <div class="row">
+                <div class="col">
+                    <p>已完成</p>
+                    <div class="num">{{finishedExamNum}}</div>
+                </div>
+                <div class="col">
+                    <p>还剩余</p>
+                    <div class="num">{{pendingExamNum}}</div>
+                </div>
+                <div class="col col-50" ng-if="warningShown">
+                    <p>距离最近一场考试还有</p>
+                    <div class="num num-danger">{{latestExamDiff}}<span>天</span></div>
+                </div>
+                <div class="col col-50" ng-if="!warningShown">
+                    <p class="mt-20">当前没有考试</p>
+                </div>
+            </div>
+        </div>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="exam in exams">
+                <div ng-if="!exam.finished" class="icon-circle">{{exam.day}}</div>
+                <div ng-if="exam.finished" class="icon-circle success"><i class="ion-checkmark-round"></i></div>
+                <h2>{{exam.name}} <span class="week">{{exam.week}}</span></h2>
+                <p>{{exam.date}}<span class="time"><i class="ion-clock"></i> {{exam.examtime}}</span><span class="fr"><i class="ion-ios-location-outline"></i> {{exam.place}}</span></p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

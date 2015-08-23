@@ -1,0 +1,13 @@
+<ion-view view-title="校园新闻" hide-tabs="true">
+    <ion-content class="news">
+        <ion-list>
+            <ion-item ng-repeat="news in newsList" class="news-item item-icon-right" ng-href="#/tab/home/news/{{news.id}}">
+                <h2>{{news.name}}</h2>
+                <p>{{news.date}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

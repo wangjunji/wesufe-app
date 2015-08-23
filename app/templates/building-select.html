@@ -1,0 +1,66 @@
+<ion-view view-title="空闲教室查询" hide-tabs="true">
+    <ion-content class="building bg">
+        <div class="list">
+            <div class="item item-divider item-calm">请选择教学楼和时间</div>
+            <div class="padder"></div>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="1">
+                <div class="item-content">
+                    第一教学楼
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="2">
+                <div class="item-content">
+                    第二教学楼
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="3">
+                <div class="item-content">
+                    第三教学楼
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="4">
+                <div class="item-content">
+                    第四教学楼
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="5">
+                <div class="item-content">
+                    国定路梯教
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <label class="item item-radio">
+                <input type="radio" name="building" ng-model="formData.buildingId" value="6">
+                <div class="item-content">
+                    武东路梯教
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+            <div class="padder"></div>
+            <label class="item item-input">
+                <span class="input-label">日期</span>
+                <input type="date" placeholder="请选择日期" ng-model="formData.date">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">开始时间</span>
+                <input type="time" placeholder="请选择开始时间" ng-model="formData.start_time">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">结束时间</span>
+                <input type="time" placeholder="请选择结束时间" ng-model="formData.end_time">
+            </label>
+            <div class="padding">
+                <button class="button button-calm button-block" ng-click="searchRoom()">立即查询</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

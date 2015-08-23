@@ -1,0 +1,45 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-score:before { content: "\e600"; }
+.icon-favorite:before { content: "\e60b"; }
+.icon-girl:before { content: "\e618"; }
+.icon-boy:before { content: "\e61a"; }
+.icon-heart:before { content: "\e601"; }
+.icon-job-stock:before { content: "\e611"; }
+.icon-timetable:before { content: "\e602"; }
+.icon-job-internet:before { content: "\e612"; }
+.icon-activity:before { content: "\e603"; }
+.icon-schedule:before { content: "\e604"; }
+.icon-job-bank:before { content: "\e613"; }
+.icon-electricity:before { content: "\e605"; }
+.icon-lecture:before { content: "\e606"; }
+.icon-job-accounting:before { content: "\e614"; }
+.icon-intern:before { content: "\e607"; }
+.icon-job-hr:before { content: "\e619"; }
+.icon-job-investment:before { content: "\e615"; }
+.icon-arrow-right:before { content: "\e60e"; }
+.icon-exam:before { content: "\e608"; }
+.icon-job-insurance:before { content: "\e616"; }
+.icon-history:before { content: "\e60c"; }
+.icon-book:before { content: "\e609"; }
+.icon-flame:before { content: "\e60d"; }
+.icon-job-marketing:before { content: "\e617"; }
+.icon-news:before { content: "\e60f"; }
+.icon-building:before { content: "\e60a"; }
+.icon-job-consulting:before { content: "\e610"; }
+

@@ -1,0 +1,15 @@
+<ion-view view-title="电费查询" hide-tabs="true">
+    <ion-content class="electric">
+        <div class="list">
+            <div class="item item-divider item-calm">请选择你的寝室<span class="fr" ng-if="level>1" ng-click="goBack()"><i class="ion-reply"></i> 上一级  </span></div>
+            <div class="padder"></div>
+            <label class="item item-radio" ng-repeat="dorm in dorms">
+                <input type="radio" ng-model="dormId" name="dormId" ng-value="dorm.id" ng-change="searchDorm(dorm)">
+                <div class="item-content">
+                    <i ng-if="dorm.leaf" class="ion-ios-home-outline"></i> {{dorm.text}}
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,56 @@
+.library {
+    .book-item {
+        &:active {
+            background-color: #d9d9d9;
+            border-color: #ccc;
+        }
+        .badge {
+            top: inherit;
+            bottom: 18px;
+            right: 10px;
+            color: #fff;
+            &.badge-green {
+                background-color: lighten($ionic-green, 10%);
+            }
+            &.badge-red {
+                background-color: lighten($ionic-red, 10%);
+            }
+        }
+    }
+    .item-avatar {
+    	padding-left: 100px;
+    	min-height: 130px;
+        img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 80px;
+            max-height: 110px;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+    }
+    .item-body h3{
+    	padding-left:8px;
+    	border-left: solid 4px $ionic-aqua;
+    	margin: 0 0 10px 0;
+    }
+    .storage-info{
+    	font-size: 14px;
+    	color:#666;
+    	padding: 10px 0;
+    	border-bottom: solid 1px #ddd;
+    	&:last-child{
+    		border-bottom-width: 0;
+    	}
+    	b{
+    		display: inline-block;
+    		width: 60px;
+    	}
+    	.available{
+    		color: $ionic-green;
+    		font-weight: 600;
+    	}
+    }
+}

@@ -1,0 +1,15 @@
+<ion-view view-title="搜索结果" hide-tabs="true">
+    <ion-content class="library">
+        <ion-list>
+            <ion-item ng-repeat="book in books" class="book-item" ng-href="#/tab/home/library/{{book.bookId}}">
+                <h2>{{book.bookName}}</h2>
+                <p>{{book.writer}}</p>
+                <p>{{book.publish}}</p>
+                <div ng-if="book.lendable!=0" class="badge badge-green">{{book.lendable}}/{{book.storage}}</div>
+                <div ng-if="book.lendable==0" class="badge badge-red">{{book.lendable}}/{{book.storage}}</div>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

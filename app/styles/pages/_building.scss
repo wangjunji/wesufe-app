@@ -1,0 +1,61 @@
+.building {
+	&.bg{
+		background-color: #eee;
+	}
+	.room-item{
+		padding: 10px 16px;
+	}
+	.item-content{
+		padding: 10px;
+		font-size: 14px;
+	}
+	.radio-icon{
+		font-size: 16px;
+		padding: 10px;
+	}
+    .item-radio input:checked ~ .radio-icon {
+        color:$flat-green-1;
+    }
+    .padder{
+    	height: 10px;
+    	background-color: #eee;
+    }
+    .item-input{
+    	padding: 0 10px;
+    	.input-label{
+    		font-size: 14px;
+    	}
+    }
+    .criteria {
+        padding: 10px 0;
+        p {
+        	i{
+        		font-size: 26px;
+        		&.ion-calendar{
+        			color: $flat-red-1;
+        		}
+        		&.ion-clock{
+        			color:$flat-orange-1;
+        		}
+        	}
+        	span{
+        		color: $flat-green-1;
+        		font-size: 26px;
+        		line-height: 28px;
+        	}
+        }
+        .num {
+            font-size: 14px;
+            color: #666;
+            display: inline-block;
+            position: relative;
+        }
+        .col {
+            text-align: center;
+        }
+        .col-middle{
+        	border-left: solid 1px #eee;
+        	border-right: solid 1px #eee;
+        }
+    }
+}

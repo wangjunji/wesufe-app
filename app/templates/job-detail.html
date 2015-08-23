@@ -1,0 +1,42 @@
+<ion-view view-title="热门实习" hide-tabs="true">
+    <ion-content class="job" padding="true">
+        <div class="main-info">
+            <h2>{{job.position}}</h2>
+            <p>{{job.company}}</p>
+        </div>
+        <div class="row icon-row">
+            <div class="col">
+                <i class="ion-social-yen-outline"></i>
+                <p class="highlight">{{job.salary}}元/天</p>
+            </div>
+            <div class="col">
+                <i class="ion-ios-location-outline"></i>
+                <p>{{job.location}}</p>
+            </div>
+            <div class="col">
+                <i class="ion-ios-clock-outline"></i>
+                <p>还有{{job.due}}天截止</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-avatar publisher-info">
+                <img src="images/avatar.png">
+                <h2>{{job.createBy}}</h2>
+                <p>{{job.grade}} {{job.major}}</p>
+            </div>
+        </div>
+        <div class="detail-info">
+            <h2>工作地点:</h2>
+            <p>{{job.address}}</p>
+            <h2>每周天数:</h2>
+            <p>{{job.workday}}天</p>
+            <h2>岗位描述:</h2>
+            <p>{{job.description}}</p>
+            <h2>简历投送</h2>
+            <p>{{job.email}}</p>
+        </div>
+    </ion-content>
+<!--     <div class="bar bar-footer job-detail-footer">
+        <a href="mailto:hr@baidu.com" class="button button-calm"><i class="ion-ios-paperplane"></i> 立即投递</a>
+    </div> -->
+</ion-view>

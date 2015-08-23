@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css" />
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='http://fonts.useso.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="styles/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- ionic/angularjs js -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="bower_components/angular-knob/src/angular-knob.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/Chart.js/Chart.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="bower_components/fullcalendar/dist/lang/zh-cn.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script src="bower_components/ngRadialGauge/src/ng-radial-gauge-dir.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/configuration.js"></script>
+    <!-- Controllers -->
+    <script src="scripts/controllers/controller.login.js"></script>
+    <script src="scripts/controllers/controller.tab.js"></script>
+    <script src="scripts/controllers/controller.home.js"></script>
+    <script src="scripts/controllers/controller.timetable.js"></script>
+    <script src="scripts/controllers/controller.gpa.js"></script>
+    <script src="scripts/controllers/controller.exam.js"></script>
+    <script src="scripts/controllers/controller.library.js"></script>
+    <script src="scripts/controllers/controller.activity.js"></script>
+    <script src="scripts/controllers/controller.lecture.js"></script>
+    <script src="scripts/controllers/controller.building.js"></script>
+    <script src="scripts/controllers/controller.news.js"></script>
+    <script src="scripts/controllers/controller.job.js"></script>
+    <script src="scripts/controllers/controller.electric.js"></script>
+    <script src="scripts/controllers/controller.calendar.js"></script>
+    <script src="scripts/controllers/controller.account.js"></script>
+    <script src="scripts/controllers/controller.chats.js"></script>
+    <!-- Services -->
+    <script src="scripts/services/service.localStorage.js"></script>
+    <script src="scripts/services/service.login.js"></script>
+    <script src="scripts/services/service.user.js"></script>
+    <script src="scripts/services/service.gpa.js"></script>
+    <script src="scripts/services/service.exam.js"></script>
+    <script src="scripts/services/service.book.js"></script>
+    <script src="scripts/services/service.activity.js"></script>
+    <script src="scripts/services/service.building.js"></script>
+    <script src="scripts/services/service.job.js"></script>
+    <script src="scripts/services/service.news.js"></script>
+    <script src="scripts/services/service.electric.js"></script>
+    <script src="scripts/services/service.calendar.js"></script>
+    <script src="scripts/services/service.chats.js"></script>
+    <!-- Directives -->
+    <script src="scripts/directives/directive.hidetab.js"></script>
+    <script src="scripts/directives/directive.errsrc.js"></script>
+    <!-- Filters -->
+    <script src="scripts/filters/filter.semester.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body ng-app="wesufe">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-dark">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>

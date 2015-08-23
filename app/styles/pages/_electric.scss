@@ -1,0 +1,15 @@
+.electric {
+    .item-radio input:checked ~ .radio-icon {
+        color: $flat-green-1;
+    }
+    .item-divider{
+    	line-height: 20px;
+    	.ion-reply{
+    		font-size: 18px;
+    	}
+    }
+    #electric-gauge{
+    	width: 300px;
+    	margin: 20px auto;
+    }
+}

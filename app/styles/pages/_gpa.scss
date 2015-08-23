@@ -1,0 +1,53 @@
+.score {
+    .score-header {
+        height: 44px;
+        background-color: $ionic-aqua;
+        text-align: center;
+        .title {
+            line-height: 44px;
+            color: #fff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+    .knob-area {
+        padding: 20px 0 40px 0;
+    }
+    .knob-wrap {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        p {
+            text-align: center;
+            color: $flat-gray-4;
+        }
+    }
+    .record-item-divider {
+        padding: 0 10px;
+    }
+    .record-item {
+        padding: 0 10px;
+        font-size: 14px;
+        .text-subject{
+        	display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;        	
+        }
+        .text-score ,.text-credit{
+            color: $flat-gray-2;
+            text-align: center;
+        }
+        .text-gpa {
+            color: $flat-blue-1;
+            font-size: 14px;
+            float: right;
+        }
+    }
+    .line-chart-wrapper{
+    	padding: 20px;
+    }
+}

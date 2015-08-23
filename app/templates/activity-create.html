@@ -1,0 +1,40 @@
+<ion-view view-title="发布活动" hide-tabs="true">
+    <ion-content class="activity">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="input-label">活动名称</span>
+                <input type="text" placeholder="活动名称" ng-model="formData.name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">活动地点</span>
+                <input type="text" placeholder="活动地点" ng-model="formData.location">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">主办部门</span>
+                <input type="text" placeholder="部门、院系或组织" ng-model="formData.department">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">活动日期</span>
+                <input type="date" placeholder="请选择活动日期" ng-model="formData.date">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">活动时间</span>
+                <input type="time" placeholder="请选择活动时间" ng-model="formData.time">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">活动标签</span>
+                <input type="text" placeholder="最多选三个" ng-model="formData.tag" ng-focus="showTagPopup()">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">活动简介</span>
+                <input type="text" placeholder="不超过100字" ng-model="formData.intro">
+            </label>
+            <button class="button button-block button-green" ng-click="submitActivity()">立即发布</button>
+            <script id="tag-popup.html" type="text/ng-template">
+                <ul class="tag-list">
+                    <li ng-repeat="tag in activityTags" ng-click="selectTag($event,tag)" ng-class="{'active':tag.selected}">{{tag.name}}</li>
+                </ul>
+            </script>
+        </div>
+    </ion-content>
+</ion-view>

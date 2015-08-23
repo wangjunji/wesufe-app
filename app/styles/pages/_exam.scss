@@ -1,0 +1,60 @@
+.exam {
+	.item-avatar:first-child{
+		border-top-width: 0;
+	}
+    .icon-circle {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        max-width: 40px;
+        max-height: 40px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $ionic-aqua;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        &.success{
+            background-color: lighten($ionic-green,10%);
+        }
+    }
+    .time {
+        margin-left: 10px;
+    }
+    .week{
+        color:#666;
+        font-size:14px;
+        line-height: 16px;
+        float: right;
+    }
+    .overview {
+        padding: 20px 0;
+        p {
+            color: #666;
+        }
+        .num {
+            font-size: 32px;
+            font-family: 'Helvetica Neue UltraLight 72';
+            color: $ionic-aqua;
+            display: inline-block;
+            position: relative;
+            &.num-danger{
+            	color:$ionic-red;
+            }
+            >span{
+            	font-size: 12px;
+            	color:#666;
+            	position: absolute;
+            	bottom: -6px;
+            	right: -14px;
+            }
+        }
+        .col {
+            text-align: center;
+        }
+        .col-50 {
+            border-left: solid 1px #eee;
+        }
+    }
+}

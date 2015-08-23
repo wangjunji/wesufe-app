@@ -1,0 +1,26 @@
+<ion-view view-title="查询结果" hide-tabs="true">
+    <ion-content class="building">
+        <div class="criteria">
+            <div class="row">
+                <div class="col">
+                    <p><i class="ion-calendar"></i></p>
+                    <div class="num">{{date}}</div>
+                </div>
+                <div class="col col-middle">
+                    <p><i class="ion-clock"></i></p>
+                    <div class="num">{{startTime}}-{{endTime}}</div>
+                </div>
+                <div class="col">
+                    <p><span>{{rooms.length}}</span></p>
+                    <div class="num">可用教室</div>
+                </div>
+            </div>
+        </div>
+        <div class="padder"></div>
+        <ion-list>
+            <ion-item ng-repeat="room in rooms" class="room-item">
+                <h2>{{room.room_name}}<span class="item-note">{{room.euqipment}}</span></h2>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

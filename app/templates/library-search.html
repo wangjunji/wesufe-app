@@ -1,0 +1,22 @@
+<ion-view view-title="图书馆" hide-tabs="true">
+    <ion-content class="library">
+        <div class="bar bar-header item-input-inset header-with-tab">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <form ng-submit="searchBook(searchData.keyword)">
+                    <input type="text" placeholder="请输入书名" ng-model="searchData.keyword" ng-keyup="onKeyup(searchData.keyword)">
+                    <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" />
+                </form>
+            </label>
+            <button class="button button-clear" ng-click="clearSearch()">取消</button>
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="book in books" class="item-thumbnail-left book-item" ng-click="searchBook(book.title)">
+                <img ng-src="{{book.images.small}}">
+                <h2>{{book.title}}</h2>
+                <p>{{book.author[0]}}</p>
+                <p>{{book.publisher}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,109 @@
+<ion-view view-title="校园活动" hide-tabs="true">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear button-lg" ng-href="#/tab/home/activity/create">
+            <i class="ion-ios-compose-outline"></i>
+        </a>
+    </ion-nav-buttons>
+    <ion-content class="activity bg" has-bouncing="false">
+        <div class="act-tab">
+            <a class="act-tab-item tab-red" ng-class="{'active':tabIndex==1}" ng-click="selectTab(1)">
+                <div class="icon-circle"><i class="iconfont icon-flame"></i></div>
+                <span>近期活动</span>
+            </a>
+            <a class="act-tab-item tab-orange" ng-class="{'active':tabIndex==2}" ng-click="selectTab(2)">
+                <div class="icon-circle"><i class="iconfont icon-history"></i></div>
+                <span>往期活动</span>
+            </a>
+            <a class="act-tab-item tab-yellow" ng-class="{'active':tabIndex==3}" ng-click="selectTab(3)">
+                <div class="icon-circle"><i class="iconfont icon-favorite"></i></div>
+                <span>我的活动</span>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Recent -->
+        <div class="padder"></div>
+        <ion-list class="act-list" ng-if="tabIndex==1">
+            <ion-item href="#/tab/home/activity/1">
+                <div class="week">星期一</div>
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <div class="week">星期二</div>
+                <h2>迎新晚会</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>09-01 18:00</div>
+                    <div class="col"><i class="ion-location"></i>大礼堂</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <div class="week">星期三</div>
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+        </ion-list>
+        <!-- History -->
+        <ion-list class="act-list" ng-if="tabIndex==2">
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+        </ion-list>
+        <!-- Mine -->
+        <ion-list class="act-list" ng-if="tabIndex==3">
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+            <ion-item href="#">
+                <h2>团学联招新</h2>
+                <div class="row desc">
+                    <div class="col col-50"><i class="ion-clock"></i>08-29 18:00</div>
+                    <div class="col"><i class="ion-location"></i>武东大操场</div>
+                </div>
+                <div class="btn-detail"><i class="icon ion-chevron-right icon-accessory"></i></div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

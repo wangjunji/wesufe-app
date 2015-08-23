@@ -1,0 +1,18 @@
+.news {
+    .news-item {
+        h2 {
+            font-size: 14px;
+        }
+    }
+    .list {
+        h2.auto-wrap {
+            overflow: auto;
+            text-overflow:clip;
+            white-space: inherit;
+        }
+        img{
+            width: 100%;
+            height:auto;
+        }
+    }
+}

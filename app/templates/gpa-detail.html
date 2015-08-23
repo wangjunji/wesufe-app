@@ -1,0 +1,21 @@
+<ion-view view-title="成绩明细" hide-tabs="true">
+    <ion-content class="score">
+        <div class="card">
+            <div ng-repeat="(semester,records) in gpaDetail">
+                <div class="item item-divider item-calm">
+                    {{semester|SemesterFilter}}
+                </div>
+                <ion-list>
+                    <ion-item class="record-item" ng-repeat="record in records">
+                        <div class="row">
+                            <div class="col col-67"><span class="text-subject">{{record.subject}}</span></div>
+                            <div class="col"><span class="text-credit">{{record.credit}}</span></div>
+                            <div class="col"><span class="text-score">{{record.score}}</span></div>
+                            <div class="col"><span class="text-gpa">{{record.gpa|number:1}}</span></div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

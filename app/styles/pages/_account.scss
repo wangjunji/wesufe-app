@@ -1,0 +1,87 @@
+.account {
+    &.bg {
+        background-color: #eee;
+    }
+    .padder {
+        height: 10px;
+        background-color: #eee;
+    }
+    .profile {
+        padding: 20px 0;
+        background-image: url('../images/blur_bg.jpg');
+        background-size: cover;
+        .avatar {
+            position: relative;
+            img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                border-radius: 50%;
+                border: solid 4px #fff;
+            }
+        }
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            color: #fff;
+            span {
+                display: inline-block;
+                position: relative;
+                i {
+                    position: absolute;
+                    left: -20px;
+                    bottom: 0;
+                    &.icon-boy {
+                        color: $ionic-aqua;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 13px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .list {
+        .padder {
+            height: 10px;
+            background-color: #eee;
+        }
+        background-color: #fff;
+        border-bottom-width: 0;
+        padding: 0;
+        .item-icon-left {
+            font-size: 14px;
+            &:last-child {
+                border-bottom-width: 0;
+            }
+            border-bottom: solid 1px #ddd;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-top-width: 0;
+            padding: 10px 10px 10px 60px;
+            margin: 0 10px;
+            .icon {
+                font-size: 24px;
+                &.icon-timetable {
+                    color: $flat-yellow-1;
+                }
+                &.icon-score {
+                    color: $flat-orange-1;
+                }
+                &.icon-exam {
+                    color: $flat-orange-1;
+                }
+                &.ion-paper-airplane {
+                    color: $flat-green-1;
+                }
+                &.icon-favorite {
+                    color: $flat-red-1;
+                }
+            }
+        }
+    }
+}

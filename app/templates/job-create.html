@@ -1,0 +1,56 @@
+<ion-view view-title="发布实习" hide-tabs="true">
+    <ion-content class="job bg">
+        <div class="list input-list">
+            <label class="item item-input">
+                <span class="input-label">岗位名称</span>
+                <input type="text" placeholder="岗位名称" ng-model="formData.position">
+            </label>
+            <div class="padder"></div>
+            <label class="item item-input">
+                <span class="input-label">公司名称</span>
+                <input type="text" placeholder="公司名称" ng-model="formData.company">
+            </label>
+            <label class="item item-input item-select">
+                <span class="input-label">所属行业</span>
+                <select ng-model="formData.industryId" ng-options="industry._id as industry.name for industry in industries">
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    所在地区
+                </div>
+                <select ng-model="formData.locationId" ng-options="location._id as location.name for location in locations">
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">公司地址</span>
+                <input type="text" placeholder="公司地址" ng-model="formData.address">
+            </label>
+            <div class="padder"></div>
+            <label class="item item-input">
+                <span class="input-label">岗位描述</span>
+                <textarea id="job_desc_textarea" ng-model="formData.description" ng-keyup="expandText()" ng-keydown="expandText()" rows="3"></textarea>
+            </label>
+            <div class="padder"></div>
+            <label class="item item-input">
+                <span class="input-label">工作天数</span>
+                <input type="tel" placeholder="每周至少工作天数" ng-model="formData.workday">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">日薪 (元)</span>
+                <input type="text" placeholder="日薪" ng-model="formData.salary">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">简历投递</span>
+                <input type="email" placeholder="简历投题邮箱" ng-model="formData.email">
+            </label>
+            <div class="padder"></div>
+            <label class="item item-input">
+                <span class="input-label">截止日期</span>
+                <input type="date" placeholder="截止日期" ng-model="formData.deadline">
+            </label>
+            <div class="padder"></div>
+            <button class="button button-block button-green" ng-click="submitJob()">立即发布</button>
+        </div>
+    </ion-content>
+</ion-view>

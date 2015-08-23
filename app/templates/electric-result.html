@@ -1,0 +1,15 @@
+<ion-view view-title="{{room}} 剩余电量" hide-tabs="true">
+    <ion-content class="electric">
+        <div id="electric-gauge" width="300" ng-radial-gauge ranges="ranges" value="value" value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit">
+        </div>
+        <div class="padding">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-67">
+                    <button class="button button-assertive button-block">立即充值</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

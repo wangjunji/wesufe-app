@@ -1,0 +1,21 @@
+.timetable {
+    .timetable-item {
+        border-left: solid 6px $flat-gray-1;
+        opacity: .8;
+        &.on{
+        	border-left: solid 6px $flat-green-1;
+        }
+        h2{
+        	font-weight: 600;
+        }
+        p {
+        	color: $flat-gray-4;
+            em {
+                float: right;
+            }
+        }
+    }
+    .badge-light {
+        color: $flat-blue-1;
+    }
+}

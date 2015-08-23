@@ -1,0 +1,217 @@
+.job {
+	&.bg{
+		background-color: #eee;
+	}
+    .filter {
+        background-color: #f8f8f8;
+        border-bottom: solid 1px #ddd;
+        a {
+            text-align: center;
+            display: block;
+            color: #444;
+            text-decoration: none;
+            &:active {
+                text-decoration: none;
+            }
+            i {
+                color: #999;
+            }
+            .selected {
+                color: $flat-blue-1;
+                font-weight: 500;
+            }
+        }
+        .col:nth-child(3n+2) a {
+            margin-left: -5px;
+            margin-right: -5px;
+            border-left: solid 1px #ddd;
+            border-right: solid 1px #ddd;
+        }
+    }
+    .job-item {
+        span {
+            color: $flat-orange-1;
+        }
+        i {
+            font-size: 16px;
+            color: #ddd;
+        }
+    }
+    .main-info {
+        padding-bottom: 10px;
+        text-align: center;
+        h2 {
+            font-size: 18px;
+            color: #444;
+        }
+        p {
+            color: #999;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
+    .icon-row {
+        text-align: center;
+        border-top: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
+        padding: 10px 0;
+        .col {
+            i {
+                display: block;
+                font-size: 30px;
+                color: #999;
+            }
+            &:nth-child(3n+2) {
+                border-left: solid 1px #ddd;
+                border-right: solid 1px #ddd;
+            }
+            p {
+                margin-top: 10px;
+                color: #444;
+                &.highlight {
+                    color: $flat-orange-1;
+                }
+            }
+        }
+    }
+    .publisher-info {
+        border: none;
+        border-bottom: solid 1px #ddd;
+        h2 {
+            color: #444;
+        }
+        p {
+            color: #999;
+        }
+    }
+    .detail-info {
+        h2 {
+            color: #666;
+            font-size: 14px;
+            margin: 6px 0;
+        }
+        p {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 6px;
+            white-space: pre-line;
+        }
+    }
+    .input-list {
+        .item-select select {
+            right: auto;
+            padding: 13px 45px 15px 0px;
+            direction: ltr;
+        }
+        .padder{
+        	height: 10px;
+        	background-color: #eee;
+        }
+        .button-green{
+        	background-color: $flat-green-1;
+        	color:#fff;
+        }
+    }
+}
+
+.job-detail-footer {
+    border: none;
+    background-image: none;
+    .button {
+        width: 100%;
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: inherit;
+    z-index: 10;
+    width: 100%;
+    height: 60%;
+    min-height: initial;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.modal-backdrop.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filter-modal {
+    .bar {
+        border-bottom: solid 1px #ddd;
+        background-color: #f8f8f8;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 14px;
+        color: #444;
+    }
+    a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #444;
+        }
+        .icon-circle {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 auto;
+            &.orange {
+                background-color: lighten($flat-orange-1, 10%);
+            }
+            &.red {
+                background-color: lighten($flat-red-1, 10%);
+            }
+            &.purple {
+                background-color: lighten($flat-purple-1, 10%);
+            }
+            &.yellow {
+                background-color: lighten($flat-yellow-1, 10%);
+            }
+            &.green {
+                background-color: lighten($flat-green-1, 10%);
+            }
+            &.blue {
+                background-color: lighten($flat-blue-1, 10%);
+            }
+            &.gray {
+                background-color: lighten($flat-gray-2, 10%);
+            }
+            &.dark {
+                background-color: #444;
+            }
+        }
+        i {
+            line-height: 40px;
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+    .list {
+        .item {
+            padding: 0;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            a {
+                text-align: left;
+                border-bottom: solid 1px #ddd;
+                color: #444;
+            }
+        }
+    }
+}

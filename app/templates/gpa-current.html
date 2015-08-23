@@ -1,0 +1,44 @@
+<ion-view view-title="我的成绩" hide-tabs="true">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-lg" ng-click="showGpaSummary()">
+            <i class="ion-more"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="score">
+        <div class="score-header">
+            <h2 class="title">{{semester|SemesterFilter}}</h2>
+        </div>
+        <div class="knob-area">
+            <div class="row">
+                <div class="col">
+                    <div class="knob-wrap">
+                        <knob knob-data="knobData.gpa" knob-options="knobOptions.gpa"></knob>
+                        <p>GPA</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="knob-wrap">
+                        <knob knob-data="knobData.score" knob-options="knobOptions.score"></knob>
+                        <p>平均分</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="knob-wrap">
+                        <knob knob-data="knobData.credit" knob-options="knobOptions.credit"></knob>
+                        <p>总学分</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ion-list>
+            <ion-item class="record-item" ng-repeat="record in records">
+                <div class="row">
+                    <div class="col col-67"><span class="text-subject">{{record.subject}}</span></div>
+                    <div class="col"><span class="text-credit">{{record.credit}}</span></div>
+                    <div class="col"><span class="text-score">{{record.score}}</span></div>
+                    <div class="col"><span class="text-gpa">{{record.gpa|number:1}}</span></div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

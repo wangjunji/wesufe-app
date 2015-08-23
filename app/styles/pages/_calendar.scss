@@ -1,0 +1,252 @@
+.calendar {
+    .list {
+        .item {
+            padding: 10px;
+            &.normal.highlight {
+                background-color: rgba($flat-blue-1, 0.1);
+            }
+            &.holiday.highlight {
+                background-color: rgba($flat-red-1, 0.1);
+            }
+        }
+        .item:first-child {
+            border-top-color: #eee;
+        }
+        h2 {
+            font-size: 12px;
+            color: #aaa;
+            font-weight: 400;
+        }
+        p {
+            position: relative;
+            white-space: normal;
+            text-overflow: clip;
+            overflow: visible;
+            font-size: 13px;
+            min-height: 40px;
+            line-height: 20px;
+            padding-left: 16px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                top: 5px;
+                left: 0;
+            }
+            &.normal:before {
+                background-color: lighten($flat-blue-1, 10%);
+            }
+            &.holiday:before {
+                background-color: lighten($flat-red-1, 10%);
+            }
+        }
+    }
+    .legend {
+        height: 30px;
+        padding-right: 10px;
+        background-color: #f8f8f8;
+        .legend-group {
+            float: right;
+            margin-left: 10px;
+            .dot {
+                display: inline-block;
+                vertical-align: middle;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                &.blue {
+                    background-color: lighten($flat-blue-1, 10%);
+                }
+                &.red {
+                    background-color: lighten($flat-red-1, 10%);
+                }
+                &.green {
+                    background-color: $flat-green-1;
+                }
+            }
+            .text {
+                line-height: 30px;
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+    .fc-widget-content {
+        border-bottom-color: #eee;
+    }
+    .fc-toolbar {
+        padding: 6px 0;
+        margin: 0;
+        background-color: $flat-green-1;
+        h2 {
+            font-size: 16px;
+            line-height: 26px;
+            color: #fff;
+        }
+    }
+    .fc-unthemed .fc-today {
+        background: transparent;
+    }
+    .fc-today-circle {
+        background-color: $flat-green-1;
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 11px auto auto auto;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 16px;
+    }
+    .fc button {
+        height: 26px;
+        padding: 0 8px;
+        font-size: 14px;
+        color: #fff;
+        text-shadow: none;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+    }
+    .fc-icon {
+        display: inline-block;
+        font-family: "Ionicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        font-size: 18px;
+        &.fc-icon-left:before {
+            content: "\f124";
+        }
+        &.fc-icon-right:before {
+            content: "\f125";
+        }
+    }
+    .fc-day-header {
+        font-size: 12px;
+        font-weight: 600;
+        color: #666;
+        line-height: 30px;
+        border-left: none;
+        border-right: none;
+    }
+    .fc-day {
+        border-width: 0;
+    }
+    .fc-ltr .fc-basic-view .fc-day-number {
+        text-align: center;
+        line-height: 55px;
+    }
+    .fc-basic-view .fc-body .fc-row {
+        height: 60px !important;
+    }
+    .fc-event.fc-start.fc-end,
+    .fc-event.fc-start.fc-not-end,
+    .fc-event.fc-not-start.fc-end {
+        border-radius: 16px;
+        padding: 0;
+        top: -48px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .fc-event.fc-start.fc-end.oneday {
+        width: 32px;
+        height: 32px;
+        left: 50%;
+        margin-left: -16px;
+        .fc-title {
+            display: block;
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 16px;
+        }
+        &.normal {
+            background-color: lighten($flat-blue-1, 10%);
+            border-color: lighten($flat-blue-1, 10%);
+        }
+        &.holiday {
+            background-color: lighten($flat-red-1, 10%);
+            border-color: lighten($flat-red-1, 10%);
+        }
+    }
+    .fc-event.fc-start.fc-not-end {
+        height: 32px;
+        border: none;
+        margin-top: 2px;
+        .fc-title {
+            display: block;
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 16px;
+        }
+        &.normal {
+            background-color: rgba(lighten($flat-blue-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-blue-1, 10%);
+            }
+        }
+        &.holiday {
+            background-color: rgba(lighten($flat-red-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-red-1, 10%);
+            }
+        }
+    }
+    .fc-event.fc-not-start.fc-end {
+        height: 32px;
+        border: none;
+        margin-top: 2px;
+        .fc-title {
+            display: block;
+            float: right;
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 16px;
+        }
+        &.normal {
+            background-color: rgba(lighten($flat-blue-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-blue-1, 10%);
+            }
+        }
+        &.holiday {
+            background-color: rgba(lighten($flat-red-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-red-1, 10%);
+            }
+        }
+    }
+    .fc-event.fc-start.fc-end {
+        height: 32px;
+        border: none;
+        .fc-title {
+            display: block;
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 16px;
+        }
+        &.normal {
+            background-color: rgba(lighten($flat-blue-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-blue-1, 10%);
+            }
+        }
+        &.holiday {
+            background-color: rgba(lighten($flat-red-1, 10%), 0.1);
+            .fc-title {
+                background-color: lighten($flat-red-1, 10%);
+            }
+        }
+    }
+}

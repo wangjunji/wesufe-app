@@ -1,0 +1,32 @@
+.button-lg{
+	font-size: 24px !important;
+}
+/*Disabling platform specific tweaks */
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header.header-with-tab
+{
+  height: 44px !important;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header.header-with-tab:not(.bar-subheader).item-input-inset .item-input-wrapper
+{
+  margin-top: 0px !important;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header.header-with-tab:not(.bar-subheader) > *
+{
+  margin-top: 0px !important;
+}
+//Tab Hide Animation
+.tabs {
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.tabs-item-hide > .tabs{
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  bottom: -50px;
+  display: flex;
+}
+//Logo Special Font
+.main-logo-title{
+  font-family: 'Poiret One', cursive;
+  font-size: 28px;
+}

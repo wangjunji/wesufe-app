@@ -1,0 +1,25 @@
+<ion-view view-title="校历" hide-tabs="true">
+    <ion-content class="calendar">
+        <div calendar="myCalendar" ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
+        <div class="legend">
+            <div class="legend-group">
+                <span class="dot red"></span>
+                <span class="text">节假日</span>
+            </div>
+            <div class="legend-group">
+                <span class="dot blue"></span>
+                <span class="text">事件</span>
+            </div>
+            <div class="legend-group">
+                <span class="dot green"></span>
+                <span class="text">今日</span>
+            </div>
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="event in allEvents" id="{{event._id}}" class="item {{event.className}}" ng-class="{'highlight':isActive('{{event._id}}')}">
+                <h2>{{event.start|date:'yyyy年M月d日'}}<span ng-if="event.end && event.end!==event.start">-{{event.end|date:'yyyy年M月d日'}}</span></h2>
+                <p class="{{event.className}}">{{event.description}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

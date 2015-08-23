@@ -1,0 +1,25 @@
+<ion-view view-title="{{book.title}}" hide-tabs="true">
+    <ion-content class="library">
+        <div class="list card">
+            <div class="item item-avatar">
+                <img ng-src="{{book.picUrl}}" err-src="images/default_book.jpg">
+                <h2>{{book.title}}</h2>
+                <p>{{book.writer}}</p>
+                <p>{{book.publisher}}</p>
+                <p>ISBN:{{book.isbn}}</p>
+            </div>
+            <div class="item item-body">
+                <h3>图书简介</h3>
+                <p ng-if="!book.doubanIntro">{{book.abstract}}</p>
+                <p ng-if="book.doubanIntro">{{book.doubanIntro}}</p>
+                <h3>馆藏信息</h3>
+                <div class="storage-info" ng-repeat="storage in book.storage">
+                    <div><b>索书号:</b>{{storage.callnum}}</div>
+                    <div><b>条形码:</b>{{storage.barcode}}</div>
+                    <div><b>馆藏地:</b>{{storage.location}}</div>
+                    <div><b>状态:</b><span ng-class="{'available':storage.status=='可借'}">{{storage.status}}</div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

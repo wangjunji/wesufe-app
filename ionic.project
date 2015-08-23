@@ -1,0 +1,10 @@
+{
+  "name": "ionic-test",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/v2",
+      "proxyUrl": "https://api.douban.com/v2"
+    }
+  ]
+}

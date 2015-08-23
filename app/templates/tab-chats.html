@@ -1,0 +1,40 @@
+<ion-view view-title="通讯录">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear button-lg" ng-href="#/tab/chats/addfriend">
+            <i class="ion-person-add"></i>
+        </a>
+    </ion-nav-buttons>
+    <ion-content scroll="false" class="chats">
+        <div class="bar bar-header item-input-inset header-with-tab">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <form ng-submit="searchBook(searchData.keyword)" class="ng-pristine ng-valid">
+                    <input type="text" placeholder="查找联系人..." ng-model="searchData.keyword" ng-keyup="onKeyup(searchData.keyword)">
+                    <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+                </form>
+            </label>
+            <button class="button button-clear" ng-click="clearSearch()">取消</button>
+        </div>
+        <ion-scroll style="height:100%">
+            <ion-list>
+                <div ng-repeat="(key,group) in chats">
+                    <ion-item class="item-divider">{{key}}
+                    </ion-item>
+                    <ion-item class="item-avatar item-icon-right" ng-repeat="chat in group" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                        <img ng-src="{{chat.face}}">
+                        <h2>{{chat.name}}</h2>
+                        <!-- <p>{{chat.lastText}}</p> -->
+                        <i class="icon ion-chevron-right icon-accessory"></i>
+                        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+                            删除
+                        </ion-option-button>
+                        <ion-option-button class="button-stable" ng-click="remove(chat)">
+                            分组
+                        </ion-option-button>
+                    </ion-item>
+                </div>
+            </ion-list>
+            <div class="padder"></div>
+        </ion-scroll>
+    </ion-content>
+</ion-view>
